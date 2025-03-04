@@ -49,4 +49,7 @@ jobs:
 
       - name: Build dependencies
         run: source ./buildenv.sh ${{ matrix.target }}
-    
+
+      - name: Set up build environment
+        run: |
+          cd && ls
